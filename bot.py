@@ -19,7 +19,6 @@ for message in AllNewMessages:
 	   if "irishfact" in message.body.lower(): 
 	   	  unread_messages = []
 	   	  unread_messages.append(message)
-	   	  print(unread_messages)
 	   	  tom_bot.inbox.mark_read(unread_messages)
 	   	  what_user = str(message.author)
 	   	  logging.basicConfig(filename="simplelog.log",  format='%(asctime)s %(levelname)s %(message)s',level=logging.INFO)
